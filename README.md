@@ -1,6 +1,11 @@
 Combined-Policy Imitation Learning on Specialized GA Bots in X-Pilot
-Muhammad Abdullah  COM 407: Computational Intelligence  Fall 2025
-Abstract
+
+Muhammad Abdullah  
+COM 407
+Computational Intelligence  
+Fall 2025
+
+Abstract:
 This project investigates whether combining multiple specialist policies can produce a robust, end-to-end imitation agent for X-Pilot. I evolved three Genetic Algorithm (GA) specialists Thruster, Shooter, and Navigator collected millions of structured state-action demonstrations, trained per-expert neural imitation models, and built a gating network to blend the experts into a single combined policy. The combined model produces smoother behavior than each neural expert and outperforms the neural specialists, while the original GA agents remain strong baselines.
 Motivation
 Previous imitation work for X-Pilot in the course controlled only a subset of actions and did not produce reliable end-to-end controllers. There was a clear gap: no single imitation model convincingly replaced a rule-based or GA agent, and nobody had explored whether specialized experts each optimized for a different competency could be combined to produce a better overall policy. This project addresses that gap by (1) building strong specialist GAs, (2) training neural imitation models from their demonstrations, and (3) combining those models with a learned gating mechanism.
